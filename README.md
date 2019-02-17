@@ -3,6 +3,7 @@
 Compatible with both Raspberry Pi and Beaglebone Black
 
 [Datasheet](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)
+
 [Tutorial](https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/overview)
 
 ```
