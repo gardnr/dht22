@@ -12,7 +12,7 @@ class Dht22(drivers.Sensor):
 
     def read(self):
 
-        for _ in range(DHT22.MAX_ATTEMPTS):
+        for _ in range(Dht22.MAX_ATTEMPTS):
             sensor = Adafruit_DHT.DHT22
 
             # Try to grab a sensor reading. Use the read_retry method which
