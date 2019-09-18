@@ -1,6 +1,6 @@
 import Adafruit_DHT
 
-from gardnr import drivers
+from gardnr import drivers, metrics
 
 
 class Dht22(drivers.Sensor):
@@ -25,8 +25,8 @@ class Dht22(drivers.Sensor):
             # guarantee the timing of calls to read the sensor).
             # If this happens try again!
             if humidity is not None and temperature is not None:
-                self.create_metric_log('air-temp', temperature)
-                self.create_metric_log('rh', humidity)
+                metrics.create_metric_log('air-temp', temperature)
+                metrics.create_metric_log('rh', humidity)
                 return
 
             raise IOError('Cannot read from DHT22')
