@@ -10,7 +10,7 @@ Compatible with both Raspberry Pi and Beaglebone Black
 python3 -m pip install -r dht22/requirements.txt
 
 gardnr add metric air temperature air-temp
-gardnr add metric air humidity rh
+gardnr add metric air relative-humidity rh
 
 gardnr add driver dht22 dht22.driver.py:Dht22 -c pin=13
 ```
